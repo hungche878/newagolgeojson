@@ -27,6 +27,12 @@
           basemap: "arcgis/topographic" // basemap styles service
         });
 
+        const geojsonLayer = new GeoJSONLayer({
+          url: MegaCities02.geojson, //https://hungche878.github.io/newagolgeojson/MegaCities02.geojson
+          copyright: "USGS Earthquakes",
+        });
+
+
         const view = new MapView({
           map: map,
           center: [-118.805, 34.027], // Longitude, latitude
