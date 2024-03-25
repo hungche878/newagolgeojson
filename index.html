@@ -50,13 +50,14 @@
 
         console.log(geojsonLayer);
 
-
+        map.add(geojsonLayer);
+        
         const view = new MapView({
           map: map,
           center: [0,0], // Longitude, latitude
           zoom: 4, // Zoom level
           container: "viewDiv", // Div element
-          layers: geojsonLayer
+          layers: [geojsonLayer]
         });
 
           console.log(view);
